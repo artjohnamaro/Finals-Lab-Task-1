@@ -1,8 +1,5 @@
-# Finals Lab Task 1: MySQL Basics
+# Finals Lab Task 1: [MySQL Basics](https://github.com/user-attachments/files/19615354/Art.John.T.MySQL.docx)
 - This portfolio demonstrates foundational MySQL skills through the development of a multi-level company database. It covers key tasks such as writing SQL queries, designing table structures, and creating an ER diagram or relational schema. Additionally, it includes SQL scripts for the database and table structures to illustrate the database's design and implementation.
-
-## SQL scripts of the database and its table structures
-[MySQL Basics](https://github.com/user-attachments/files/19615354/Art.John.T.MySQL.docx)
 
 ## Step By Step Process
 ✅ **Task 1: Create employees Table**
