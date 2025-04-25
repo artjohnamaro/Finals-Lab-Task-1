@@ -324,6 +324,61 @@
     .download-hint i {
       font-size: 1.25rem;
     }
+
+
+    /* Add modal styles */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 14, 23, 0.95);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+    }
+
+
+    .modal.active {
+      display: flex;
+    }
+
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 90vh;
+      position: relative;
+    }
+
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+
+
+    .close-modal {
+      position: absolute;
+      top: -2rem;
+      right: -2rem;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+
+    .close-modal:hover {
+      color: var(--primary-light);
+      transform: rotate(90deg);
+    }
   </style>
 </head>
 <body>
@@ -505,7 +560,15 @@
   </div>
 
 
- 
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <button class="close-modal">
+        <i class="ph ph-x"></i>
+      </button>
+      <img src="" alt="Modal Image" id="modalImage">
+    </div>
+  </div>
+
 
   <script>
     // Image Modal Functionality
@@ -546,3 +609,4 @@
   </script>
 </body>
 </html>
+
